@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/* PALETTE : https://coolors.co/263849-21748a-20b7b6-ff595e-d0cfec */
+
+body {
+    background-image: linear-gradient(to bottom, #263849, #28465a, #28556b, #26647b, #21748a);
+    min-height: 100vh;
+    margin: 0;
+    /*position: relative;*/
+}
+
+/*.row {
+    --bs-gutter-x: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}*/

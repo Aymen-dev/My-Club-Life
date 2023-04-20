@@ -1,0 +1,35 @@
+/*.spacer {
+    flex: 1 1 auto;
+}*/
+
+.logo {
+    position: relative;
+    top: -5px;
+    width: 80px;
+    height: 80px;
+}
+
+.mat-toolbar {
+    background: #263849;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.59);
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
+li a {
+    color: #D0CFEC;
+    font-size: 27px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+li a:hover {
+    color: #20B7B6;
+}

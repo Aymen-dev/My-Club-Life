@@ -1,0 +1,49 @@
+<mat-toolbar class="fixed-top" style="height: 100px;" [ngClass]="{'mat-toolbar' : isScrolled}">
+    <div class="col-3">
+        <a class="icon" href="./home.component.html">
+            <img class="logo" src="assets/images/logo.png" alt="App Logo"></a>
+        <span style="color:#D0CFEC; font-size: 22px;">MyClubLife</span>
+    </div>
+    <!--<span class="spacer"></span>-->
+
+    <div class="col-8">
+        <ul [hidden]="navLinksHidden">
+            <li class="active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/MyClubLife/src/app/clubs/clubs.component.html">Clubs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Account</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-1">
+        <button [hidden]="navButtonHidden" mat-icon-button [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu">
+            <mat-icon style="color: #D0CFEC;">menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon fontIcon="home">Home</mat-icon>
+                <span><a class="text-decoration-none text-dark" href="/">Home</a></span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon fontIcon="Club"></mat-icon>
+                <span><a class="text-decoration-none text-dark" href="/">Clubs</a></span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>Events</mat-icon>
+                <span><a class="text-decoration-none text-dark" href="/">Events</a></span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>logout</mat-icon>
+                <span><a class="text-decoration-none text-dark" href="/">Logout</a></span>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
