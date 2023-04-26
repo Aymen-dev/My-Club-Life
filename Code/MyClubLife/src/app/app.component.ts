@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyClubLife';
+  showExploreWebsiteLink = true;
+  isLinkClicked = false;
 }

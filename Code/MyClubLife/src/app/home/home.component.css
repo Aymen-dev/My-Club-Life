@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Kanit&display=swap');
+
+/* PALETTE : https://coolors.co/263849-21748a-20b7b6-ff595e-d0cfec */
+
+.MCLtitle{
+    font-family: 'Kanit', sans-serif;
+    color: #20B7B6;
+    margin: 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.381);
+    font-size: 70px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+p {
+    opacity: 0;
+    color: white;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    animation-name: btnFadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 576px) {
+    .MCLtitle {
+        font-size: 40px;
+    }
+    h1{
+        font-size: 10px;
+    }
+}
+
+@keyframes btnFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        font-size: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 70px;
+    }
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+    color: #20B7B6;
+    margin: 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.381);
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #ebba51;
+    margin: 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.381);
+    font-size: 30px;
+}
+
+button {
+    opacity: 0;
+    animation-name: btnFadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.118);
+}
+
+a{
+    position: absolute;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+img{
+    width: 100%;
+    height: 25rem;
+}
+
+/*FOOTER
+p{
+    margin: 0px 50px;
+    padding: 0;
+    color: white;
+}
+
+
+.bg-dark{
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    align-items: center;
+}*/
+
+.space {
+    margin-bottom: 10%;
+}
+
+.row {
+    justify-content: center;
+}
+
+.welcome {
+    color: #ebba51;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.381);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container {
+    padding: 200px 20px 100px;
+}
+
+
+.btn {
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
+    background: #20b7b792;
+    color: white;
+}
+
+.btn:hover {
+    background: #ddd1c716;
+}
+
+.btn span {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 10rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    padding: 60px;
+}
+
+
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+
+.marketing{
+    padding: 0;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    color:rgba(255, 255, 255, 0.481);
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+

@@ -1,0 +1,134 @@
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 text-center d-inline-flex flex-column">
+                <h1 class="MCLtitle">My Club Life</h1>
+            </div>
+        </div>
+        <div class="row mt-5 p-5">
+            <div class="col">
+                <p><span class="welcome">Welcome</span> to My Club Life, the ultimate web app for
+                    diving into the club experience of your choice!
+                    Our platform provides an all-in-one solution for club related topics such as member
+                    recruitment,
+                    participating in events and overall club performance.<br>
+
+                    With<span> My Club Life</span>, you can easily discover clubs in your
+                    university, rate and review them if you
+                    are already a member, and participate with your club in yearly planned competitions. Our
+                    evaluation system ensures the discovery of the true levels of clubs comparing to each other
+                    in
+                    the social and student life, considering criteria like club size, activities and events.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn" (click)="openDialog()"><span>Login</span></button>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+            <hr style="width: 80%; color:rgba(255, 255, 255, 0.481)">
+        </div>
+
+        <div class="space"></div>
+        <div class="row mt-5 text-center">
+            <h1>Discover Clubs In Your University</h1>
+        </div>
+        <div class="space"></div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <app-clubs></app-clubs>
+                </div>
+                <div class="carousel-item">
+                    <app-clubs></app-clubs>
+                </div>
+                <div class="carousel-item">
+                    <app-clubs></app-clubs>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="container marketing">
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Discover annual events. <span class="text-muted">For clubs, by
+                            admins...</span></h2><br>
+                    <p class="lead">
+                        We encourage clubs to participate in one or many events hosted by the admins.
+                        Each event will have one winner, and two runner up places.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="assets/images/vs.png" alt="VSimage">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Compete<br><span class="text-muted">
+                            ... And win prizes !
+                        </span></h2><br>
+                    <p class="lead">
+                        Each club manager can participate in annual events with his club for a chance to win the
+                        best club title in our website.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="assets/images/trophy.png" alt="trophy">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">And lastly,<br> <span class="text-muted">Discover & Join
+                            clubs.</span>
+                    </h2>
+                    <br>
+                    <p class="lead">
+                        Since we created this app, we do believe in the power of clubs.<br>
+                        Clubs can give you a great sense of responsibility, the opportunity to organize your
+                        college life and overall be active and improve your soft and hard skills.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="assets/images/clubs.png" alt="clubsimage">
+                </div>
+            </div>
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+    </div>
+</main>
+<!--<footer>
+    <div class="bg-dark">
+        <p>&copy; 2023 MyClubLife, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p><a href="#">Back to top</a></p>
+    </div>
+</footer>-->

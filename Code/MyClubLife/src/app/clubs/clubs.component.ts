@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./clubs.component.css']
 })
 export class ClubsComponent {
-  isDropdownOpen = false;
-  toggleDropdown() {
-    this.isDropdownOpen = !this.isDropdownOpen;
-  }
 }

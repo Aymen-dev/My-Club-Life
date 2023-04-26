@@ -92,9 +92,10 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"]
           }
         }
       }

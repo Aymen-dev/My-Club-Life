@@ -1,0 +1,14 @@
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgba(201, 201, 201, 0.984);
+}
+
+p:hover{
+    color:rgba(255, 255, 255, 0.885);
+    font-size: 4.5em;
+    transition: font-size 0.5s ease-out;
+}

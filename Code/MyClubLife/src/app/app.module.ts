@@ -4,15 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
-import { CreateAccountComponent } from './create-account/create-account.component';
-import { RequestsComponent } from './requests/requests.component';
-import { AdminClubListComponent } from './admin-club-list/admin-club-list.component';
-import { ClubsComponent } from './clubs/clubs.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,8 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 
-
-
+import { AppComponent } from './app.component';
+import { RequestsComponent } from './requests/requests.component';
+import { ClubsComponent } from './clubs/clubs.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -30,13 +25,11 @@ import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
-    CreateAccountComponent,
     RequestsComponent,
-    AdminClubListComponent,
     ClubsComponent,
     NavbarComponent,
     LoginComponent,
-    WelcomeComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

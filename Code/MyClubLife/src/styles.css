@@ -4,6 +4,7 @@ body {
     background-image: linear-gradient(to bottom, #263849, #28465a, #28556b, #26647b, #21748a);
     min-height: 100vh;
     margin: 0;
+    padding: 0;
     /*position: relative;*/
 }
 

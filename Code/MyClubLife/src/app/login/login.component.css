@@ -1,0 +1,95 @@
+.container-fluid {
+    position: relative;
+    padding: 47px;
+    background: #28465a;
+}
+
+.submitbtn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: white;
+    background-color: #0366d6;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+}
+
+.submitbtn:hover {
+    color: white;
+    background-color: #0471ee;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.1) 0px 1px 0px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset;
+    transition-duration: 0.1s;
+}
+
+
+.resetbtn {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #24292e;
+    background-color: #fafbfc;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+}
+
+.resetbtn:hover {
+    background-color: #cfcfcf;
+    border-color: #1b1f2326;
+    transition-duration: 0.1s;
+}
+
+.space {
+    margin-bottom: 8px;
+}
+
+input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    background-color: rgba(0, 0, 0, 0.147);
+    border: 1px solid #20b7b77a;
+    color: #FFFAFF;
+}
+
+input:focus {
+    background: none;
+}
+
+.btn-space {
+    padding: 0px 15px;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Kanit', sans-serif;
+    color: #20B7B6;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.155);
+    margin-bottom: 60px;
+}
+
+label {
+    font-family: 'Kanit', sans-serif;
+    color: #FFFAFF;
+    margin: 0;
+}
+
+.col{
+    justify-content: center;
+}

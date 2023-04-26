@@ -7,23 +7,10 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavbarComponent {
   isScrolled = false;
-  navButtonHidden = true;
-  navLinksHidden = false;
+  screenWidth : number = window.innerWidth;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 200;
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: { target: { innerWidth: any; }; }) {
-    const screenWidth = event.target.innerWidth;
-    if (screenWidth < 768) {
-      this.navLinksHidden = true;
-      this.navButtonHidden = false;
-    } else {
-      this.navLinksHidden = false;
-      this.navButtonHidden = true;
-    }
   }
 }
