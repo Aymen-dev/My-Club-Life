@@ -13,14 +13,13 @@
 </head>
 
 <body>
-    <<ng-container *ngIf="showExploreWebsiteLink">
+    <ng-container *ngIf="showExploreWebsiteLink">
         <a routerLink="/home" (click)="isLinkClicked = true; showExploreWebsiteLink=false"><p>Explore the website &raquo;</p></a>
     </ng-container>
     <ng-container *ngIf="isLinkClicked">
         <app-navbar></app-navbar>
         <router-outlet></router-outlet>
-    </ng-container>>
-
+    </ng-container>
 </body>
 
 </html>
