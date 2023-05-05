@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `myclublife`.`Club_Manager` (
   `cm_grade` VARCHAR(20) NOT NULL,
   `cm_email` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`cmID`),
-  UNIQUE INDEX `cm_username_UNIQUE` (`cm_username` ASC) VISIBLE)
+  UNIQUE INDEX `cm_username_UNIQUE` (`cm_username` ASC))
 ENGINE = InnoDB;
 
 
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `myclublife`.`Club` (
   `Score` FLOAT NOT NULL DEFAULT 0,
   `Club_Manager_cmID` INT NOT NULL,
   PRIMARY KEY (`clubID`),
-  INDEX `fk_Club_Club_Manager1_idx` (`Club_Manager_cmID` ASC) VISIBLE,
+  INDEX `fk_Club_Club_Manager1_idx` (`Club_Manager_cmID` ASC),
   CONSTRAINT `fk_Club_Club_Manager1`
     FOREIGN KEY (`Club_Manager_cmID`)
     REFERENCES `myclublife`.`Club_Manager` (`cmID`)
@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `myclublife`.`Student` (
   `student_email` VARCHAR(50) NOT NULL,
   `Club_clubID` INT NULL,
   PRIMARY KEY (`studentID`),
-  INDEX `fk_Student_Club1_idx` (`Club_clubID` ASC) VISIBLE,
+  INDEX `fk_Student_Club1_idx` (`Club_clubID` ASC),
   CONSTRAINT `fk_Student_Club1`
     FOREIGN KEY (`Club_clubID`)
     REFERENCES `myclublife`.`Club` (`clubID`)
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `myclublife`.`Event` (
   `event_enddate` DATE NOT NULL,
   `Admin_adminID` INT NOT NULL,
   PRIMARY KEY (`eventID`),
-  INDEX `fk_Event_Admin1_idx` (`Admin_adminID` ASC) VISIBLE,
+  INDEX `fk_Event_Admin1_idx` (`Admin_adminID` ASC),
   CONSTRAINT `fk_Event_Admin1`
     FOREIGN KEY (`Admin_adminID`)
     REFERENCES `myclublife`.`Admin` (`adminID`)
@@ -135,7 +135,7 @@ CREATE TABLE IF NOT EXISTS `myclublife`.`Join_Request` (
   `Status` VARCHAR(10) NULL,
   `Club_Manager_cmID` INT NOT NULL,
   `requestID` INT NOT NULL AUTO_INCREMENT,
-  INDEX `fk_Join_Request_Club_Manager1_idx` (`Club_Manager_cmID` ASC) VISIBLE,
+  INDEX `fk_Join_Request_Club_Manager1_idx` (`Club_Manager_cmID` ASC),
   PRIMARY KEY (`requestID`),
   CONSTRAINT `fk_Join_Request_Student1`
     FOREIGN KEY (`Student_studentID`)
@@ -160,8 +160,8 @@ CREATE TABLE IF NOT EXISTS `myclublife`.`Participations` (
   `Club_clubID` INT NOT NULL,
   `Event_eventID` INT NOT NULL,
   `participationID` INT NOT NULL AUTO_INCREMENT,
-  INDEX `fk_Participations_Club1_idx` (`Club_clubID` ASC) VISIBLE,
-  INDEX `fk_Participations_Event1_idx` (`Event_eventID` ASC) VISIBLE,
+  INDEX `fk_Participations_Club1_idx` (`Club_clubID` ASC),
+  INDEX `fk_Participations_Event1_idx` (`Event_eventID` ASC),
   PRIMARY KEY (`participationID`),
   CONSTRAINT `fk_Participations_Club1`
     FOREIGN KEY (`Club_clubID`)

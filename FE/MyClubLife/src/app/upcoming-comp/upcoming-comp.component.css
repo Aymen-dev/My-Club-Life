@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.card{
+    width: 800px;
+}
+
+.card-body{
+    background-color: #263849;
+    color: #ebba51;
+}
+
+.card-header{
+    background: #28465a;
+}
+
+label{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

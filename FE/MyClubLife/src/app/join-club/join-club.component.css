@@ -1,0 +1,42 @@
+.container {
+    padding: 50px 20px 20px;
+}
+
+.btn {
+    width: 120px;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    color: #20B7B6;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.155);
+    font-size: 40px;
+    margin: 50px 0px 50px;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    color: white;
+    margin: 0;
+}
+
+input,
+select,
+textarea {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    background-color: rgba(0, 0, 0, 0.147);
+    border: 1px solid #20b7b77a;
+    color: #FFFAFF;
+}
+
+input:focus {
+    background: none;
+}
+
+select:focus {
+    color: black;
+}
+
+textarea:focus{
+    background: none;
+}

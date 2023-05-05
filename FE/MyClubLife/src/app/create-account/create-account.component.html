@@ -1,0 +1,132 @@
+<div class="container">
+    <h1 class="text-center">Create Account</h1>
+    <div *ngIf="successMessage" class="alert alert-success" role="alert">
+        {{ successMessage }}
+    </div>
+
+    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+    </div>
+    <form #createAccountForm="ngForm" name="createAccForm" (ngSubmit)="onSubmit(createAccountForm);">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name</label>
+
+                    <input [(ngModel)]="fullName" minlength="3" maxlength="30"
+                        pattern="^(?!.*\s$)[a-zA-Z]+(\s[a-zA-Z]+){1,2}$" type="text" class="form-control"
+                        name="fullName" id="fullName" #fullname="ngModel" ngModel required>
+
+                    <div class="alert alert-danger m-0" *ngIf="fullname.touched && !fullname.valid">
+                        <div class="text-danger">
+                            <div *ngIf="fullname.errors">
+                                <div *ngIf="fullname.errors['required']">This field is required</div>
+                                <div *ngIf="fullname.errors['minlength']">Minimum length is 3 characters</div>
+                                <div *ngIf="fullname.errors['pattern']"><b>Invalid Name:</b> the full name should be a
+                                    combination of a first name and a last name</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="studyField" class="form-label">Study Field</label>
+                    <select [(ngModel)]="studyField" class="form-select" name="studyField" id="studyField"
+                        #studyfield="ngModel" ngModel required>
+                        <option disabled selected>Select your field</option>
+                        <option>GLSI</option>
+                        <option>LT</option>
+                        <option>IOT</option>
+                        <option>LAII</option>
+                        <option>LISI</option>
+                        <option>LISR</option>
+                        <option>LSE_IOT</option>
+                    </select>
+                    <div class="alert alert-danger m-0" *ngIf="studyfield.touched && !studyfield.valid">
+                        <div class="text-danger">This field is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+
+                    <input [(ngModel)]="email" type="email" class="form-control" name="Email" id="email"
+                        #Email="ngModel" ngModel required email>
+
+                    <div class="alert alert-danger m-0" *ngIf="Email.touched && !Email.valid">
+                        <div class="text-danger">
+                            <div *ngIf="Email.errors">
+                                <div *ngIf="Email.errors['required']">This field is required</div>
+                                <div *ngIf="Email.errors['email']">A valid email address is required</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>You are a</label>
+                <div class="p-2">
+                    <div class="form-check">
+                        <input required class="form-check-input" type="radio" name="role" id="gridRadios1"
+                            value="Student" [(ngModel)]="selectedRole">
+                        <label class="form-check-label" for="gridRadios1">
+                            Student
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input required class="form-check-input" type="radio" name="role" id="gridRadios3"
+                            value="Club Manager" [(ngModel)]="selectedRole">
+                        <label class="form-check-label" for="gridRadios3">
+                            Club Manager
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 d-flex justify-content-center flex-column">
+                <h2 class="text-center">Login Info</h2>
+                <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input [(ngModel)]="username" minlength="4" maxlength="10" pattern="^[a-zA-Z0-9_]+$" type="text"
+                        name="username" class="form-control" id="username" #userName="ngModel" ngModel required>
+                    <div class="alert alert-danger m-0" *ngIf="userName.touched && !userName.valid">
+                        <div class="text-danger">
+                            <div *ngIf="userName.errors">
+                                <div *ngIf="userName.errors['required']">This field is required</div>
+                                <div *ngIf="userName.errors['minlength']">Minimum length is 4 characters</div>
+                                <div *ngIf="userName.errors['pattern']"><b>Invalid username:</b> only letters, numbers
+                                    and _
+                                    are permitted</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input [(ngModel)]="password" minlength="4" type="password" name="password" class="form-control"
+                        id="password" #passWord="ngModel" ngModel required>
+                    <div class="alert alert-danger m-0" *ngIf="passWord.touched && !passWord.valid">
+                        <div class="text-danger">
+                            <div *ngIf="passWord.errors">
+                                <div *ngIf="passWord.errors['required']">This field is required</div>
+                                <div *ngIf="passWord.errors['minlength']"><b>Invalid password:</b> password should have
+                                    a minimum length of 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmpass" class="form-label">Confirm Password</label>
+                    <input type="password" name="confirmpass" class="form-control" id="confirmpass"
+                        #confirmpass="ngModel" ngModel required>
+                    <div class="alert alert-danger m-0" *ngIf="confirmpass.touched && !confirmpass.valid">
+                        <div class="text-danger">This field is required</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-evenly p-5">
+                <button type="reset" class="btn btn-dark">Reset</button>
+                <button [disabled]="!createAccountForm.valid" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

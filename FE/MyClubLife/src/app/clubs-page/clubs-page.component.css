@@ -1,0 +1,71 @@
+.img-container {
+    padding: 200px 0px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 50px 0px 20px;
+}
+
+.clubsDropDownBtn {
+    padding: 50px;
+    width: 50%;
+    font-size: 40px;
+    text-decoration: none;
+    color: #ebba51;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.381);
+    margin-bottom: 10px;
+}
+
+.clubsDropDownBtn:hover{
+    background-color: rgba(0, 0, 0, 0.099);
+    border-radius: 40px;
+}
+
+.listItems {
+    padding: 0px 300px;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    border-radius: 100px;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #ebba51;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.381);
+    font-size: 30px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    color: white;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.137);
+    color: #ebba51;
+}
+
+a:hover{
+    text-decoration: none;
+}

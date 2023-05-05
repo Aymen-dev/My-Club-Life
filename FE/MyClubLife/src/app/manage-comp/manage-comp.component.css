@@ -1,0 +1,48 @@
+.card {
+    width: 100%;
+    padding: 0;
+}
+
+.rank {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.group {
+    display: flex;
+    padding: 5px;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+.group>input {
+    margin-left: 20px;
+}
+
+.card-body{
+    background: #263849;
+    color: #ebba51;
+}
+
+.bodyrank>p {
+    width: 25px;
+    margin: 0;
+}
+
+.container{
+    padding: 60px 0px;
+}
+
+input.dateinput {
+    width: 50%;
+}
+
+button{
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+}

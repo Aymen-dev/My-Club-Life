@@ -1,0 +1,66 @@
+.card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 800px;
+}
+
+.rankings {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.blocks {
+    padding: 0px 7px;
+}
+
+
+.rank {
+    border-radius: 5px;
+    background-color: rgb(0, 127, 162);
+    color: white;
+}
+
+.group {
+    display: flex;
+    padding: 5px;
+}
+
+
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.group>input {
+    margin-left: 20px;
+}
+
+.card-header{
+    background: #28465a;
+    color: white;
+}
+
+.card-body{
+    background: #263849;
+    color: #ebba51;
+}
+
+.bodyrank>p {
+    width: 25px;
+    margin: 0;
+}
+
+input.dateinput {
+    width: 50%;
+}
